@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="article.html">Latest Story</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="photo-gallery">
+        <div class="photo"><img src="ZFFJFPYZHF5V4JJEGUL4R2G5EA.jpeg" alt="Atlanta Technology Village"></div>
+        <div class="photo"><img src="apple-campus-silicon-valley.jpg.jpeg" alt="Silicon Valley"></div>
+        <div class="photo"><img src="MasterCard-NYC_01.webp" alt="Mastercard Tech Hub"></div>
+
+        <div class="gallery-controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function(){
+            document.querySelector('nav ul').classList.toggle('active');
+        })
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
